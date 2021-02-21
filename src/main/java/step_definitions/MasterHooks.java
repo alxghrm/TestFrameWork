@@ -24,7 +24,7 @@ public class MasterHooks extends DriverFactory {
       if (driver != null) {
         driver.manage().deleteAllCookies();
         driver.quit();
-        driver = null;
+        resetDriver();
       }
     } catch (Exception e) {
       e.getMessage();
