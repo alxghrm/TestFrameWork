@@ -39,8 +39,8 @@ public class DriverFactory {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
           }
-          break;
         }
+        break;
       }
     } catch (Exception e) {
       System.out.println(e.getMessage());
